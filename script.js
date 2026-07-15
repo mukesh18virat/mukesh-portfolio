@@ -38,7 +38,7 @@ window.onscroll = () => {
     scrollProgress.style.width = progress + '%';
 };
 
-// Typed.js - YAHAN CHANGE KIYA HAI
+// Typed.js Animation
 const typed = new Typed('.multiple-text', {
     strings: ['BCA Student', 'Data Analyst', 'MIS Executive'],
     typeSpeed: 100,
