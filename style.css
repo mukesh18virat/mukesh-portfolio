@@ -139,13 +139,13 @@ span {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: none;
-    box-shadow: none;
     animation: floatImage 4s ease-in-out infinite;
 }
 
-/* VARG BORDER PURA HATA DIYA */
+/* DONO BORDER HATA DIYE */
+.home-img::before,
 .home-img::after {
+    content: '';
     display: none;
 }
 
@@ -539,7 +539,6 @@ span {
     .home { flex-direction: column-reverse; text-align: center; }
     .home-content h1 { font-size: 5rem; }
     .home-img { width: 70vw; height: 70vw; margin-top: 4rem; }
-    .home-img::after { display: none; }
     .about { flex-direction: column-reverse; text-align: center; }
     .about-content h2 { text-align: center; }
     .about-img img { width: 70vw; }
