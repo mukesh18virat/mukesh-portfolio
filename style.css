@@ -355,6 +355,7 @@ span {
     transition: width 2s ease;
 }
 
+/* PROJECTS SECTION - CLICKABLE FIX ADDED */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -365,7 +366,15 @@ span {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    display: flex;
+    display: block; /* CHANGE KIYA */
+    text-decoration: none; /* LINK KA COLOR KHARAB NA HO */
+    color: inherit; /* TEXT KA COLOR SAME RAHE */
+    cursor: pointer; /* CURSOR HAND DIKHE */
+    transition: transform .5s ease;
+}
+
+.project-box:hover {
+    transform: scale(1.03);
 }
 
 .project-box img {
@@ -409,19 +418,13 @@ span {
     color: var(--bg-color);
 }
 
-.project-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--white-color);
-    border-radius: 50%;
-}
-
-.project-layer a i {
+.project-layer i {
     font-size: 2rem;
     color: var(--bg-color);
+    background: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
 }
 
 .contact {
